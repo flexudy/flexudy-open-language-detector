@@ -1,2 +1,3 @@
 # flexudy-fasttext-language-detector
-Detect Languages
+This language detector is a wrapper of Facebook's Fasttext Language Identifier.
+Minor edge cases are handled.
