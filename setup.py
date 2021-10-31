@@ -1,6 +1,8 @@
 from distutils.core import setup
 import setuptools
 
+REQUIREMENTS = [i.strip() for i in open("requirements.txt").readlines()]
+
 setup(
     name='flexudy-language-detector',
     version='0.0.1',
@@ -12,5 +14,6 @@ setup(
     license='',
     author='Flexudy Education',
     author_email='support@flexudy.com',
-    description='Module that detects the languages using Facebook\'s Fasttext Library'
+    description='Module that detects the languages using Facebook\'s Fasttext Library',
+    install_requires=REQUIREMENTS
 )
